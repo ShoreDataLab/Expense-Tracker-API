@@ -73,10 +73,10 @@ API documentation is available at `/docs` when running the server (Swagger UI).
 
 expense-tracker-api/
 ├── app/
-│   ├── models/          # SQLAlchemy models
-│   ├── schemas/         # Pydantic schemas
-│   ├── routers/         # API endpoints
-│   ├── services/        # Business logic
-│   └── utils/          # Helper functions
-├── requirements.txt     # Project dependencies
-└── main.py             # Application entry point
+├── models/          # SQLAlchemy models
+├── schemas/         # Pydantic schemas
+├── routers/         # API endpoints
+├── services/        # Business logic
+├── utils/          # Helper functions
+├── requirements.txt # Project dependencies
+└── main.py         # Application entry point
