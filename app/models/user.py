@@ -41,6 +41,7 @@ class User(Base):
     # Relationship
     profile = relationship("UserProfile", back_populates="user", uselist=False)
     budgets = relationship("Budget", back_populates="user")
+    alerts = relationship("Alert", back_populates="user")
 
 
 class UserProfile(Base):

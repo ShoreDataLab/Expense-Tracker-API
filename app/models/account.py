@@ -28,5 +28,6 @@ class Account(Base):
     created_at = Column(DateTime, server_default=func.now(), nullable=False)
     updated_at = Column(DateTime, nullable=True, onupdate=func.now())
 
+    # Relationships
     transactions = relationship("Transaction", back_populates="account")
     recurring_transactions = relationship("RecurringTransaction", back_populates="account")
