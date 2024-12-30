@@ -70,7 +70,7 @@ API documentation is available at `/docs` when running the server (Swagger UI).
 
 
 ## Project Structure
-
+```
 expense-tracker-api/
 ├── app/
 ├── models/          # SQLAlchemy models
@@ -80,3 +80,4 @@ expense-tracker-api/
 ├── utils/          # Helper functions
 ├── requirements.txt # Project dependencies
 └── main.py         # Application entry point
+```
