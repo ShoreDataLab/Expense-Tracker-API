@@ -31,3 +31,4 @@ class Account(Base):
     # Relationships
     transactions = relationship("Transaction", back_populates="account")
     recurring_transactions = relationship("RecurringTransaction", back_populates="account")
+    expenses = relationship("Expense", back_populates="account")

@@ -4,6 +4,10 @@ import logging
 
 from app.database import init_db
 from app.routers import user, auth, category, account, currency
+from app.utils.migrations import run_migrations
+
+# Call during app initialization
+run_migrations()
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)

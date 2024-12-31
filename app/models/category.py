@@ -23,9 +23,11 @@ class Category(Base):
    created_at = Column(DateTime, server_default=func.now(), nullable=False)
    updated_at = Column(DateTime, nullable=True, onupdate=func.now())
 
+   # Relationships 
    transactions = relationship("Transaction", back_populates="category")
    recurring_transactions = relationship("RecurringTransaction", back_populates="category")
    budgets = relationship("Budget", back_populates="category")
+   expenses = relationship("Expense", back_populates="category")
 
    def __repr__(self):
        return f"Category(id={self.id}, name={self.name})"

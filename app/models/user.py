@@ -38,10 +38,12 @@ class User(Base):
         onupdate=datetime.now(timezone.utc)
     )
 
-    # Relationship
+    # Relationships
     profile = relationship("UserProfile", back_populates="user", uselist=False)
     budgets = relationship("Budget", back_populates="user")
     alerts = relationship("Alert", back_populates="user")
+    goals = relationship("Goal", back_populates="user")
+    expenses = relationship("Expense", back_populates="user")
 
 
 class UserProfile(Base):
